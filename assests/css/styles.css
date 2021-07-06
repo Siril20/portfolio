@@ -29,7 +29,7 @@ header{
 .home{
 	padding: 80px;
 	display: grid;
-	grid-template-columns: 15% 45% auto;
+	grid-template-columns: 22% 48% auto;
 	text-align: center;
 }
 .home_data, .home_icon{
