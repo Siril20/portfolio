@@ -26,3 +26,22 @@ header{
 .nav_links li:hover{
 	background-color: #0088a9;
 }
+.home{
+	padding: 80px;
+	display: grid;
+	grid-template-columns: 15% 45% auto;
+	text-align: center;
+}
+.home_data, .home_icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.home_icon img{
+	width: 40px;
+}
+.home_image img{
+	border-radius: 20px;
+	width: 240px;
+}
