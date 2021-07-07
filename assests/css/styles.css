@@ -63,3 +63,33 @@ section{
 	border-radius: 20px;
 	width: 250px;
 }
+.skills{
+	flex-direction: column;
+}
+.skill_data{
+	display: flex;
+	width: 320px;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.skill_bar, .skill_percentage{
+	height: 5px;
+	border-radius: 2px;
+}
+.skill_bar{
+	width: 320px;
+	background-color: ivory;
+}
+.skill_percentage{
+	background-color: #0088a9;
+}
+.c_lang{
+	width: 90%;
+}
+.java_lang{
+	width: 80%;
+}
+.python_lang{
+	width: 80%;
+}
