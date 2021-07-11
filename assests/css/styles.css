@@ -1,130 +1,159 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
-	background-color: #24252A;
-	color: ivory;
+
+body {
+    background-color: #24252A;
+    color: ivory;
 }
-a{
-	text-decoration: none;
+
+a {
+    text-decoration: none;
 }
-li{
-	list-style: none;
+
+li {
+    list-style: none;
 }
-.container{
-	width: 100%;
-	height: 100%;
-	scroll-snap-type: y mandatory;
-	overflow-y: scroll;
-	scroll-behavior: smooth;
+
+.container {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
-header{
-	position: fixed;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 60px;
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
 }
-.logo{
-	padding-left: 20px;
-	cursor: pointer;
-	font-size: 28px;
+
+.logo {
+    padding-left: 20px;
+    cursor: pointer;
+    font-size: 28px;
 }
-.nav_links{
-	padding-right: 20px;
+
+.nav_links {
+    padding-right: 20px;
 }
-.nav_links li{
-	color: ivory;
-	display: inline;
-	padding: 10px;
-	border-radius: 8px;
-	transition: all 0.3s ease 0s;
+
+.nav_links li {
+    color: ivory;
+    display: inline;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease 0s;
 }
-.nav_links li:hover{
-	background-color: #0088a9;
+
+.nav_links li:hover {
+    background-color: #0088a9;
 }
-.home, .about, .contacts{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
+.home,
+.about,
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-section{
-	width: 100%;
-	height: 100vh;
-	scroll-snap-align: start;
+
+section {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
 }
-.home_icon img{
-	width: 40px;
+
+.home_icon img {
+    width: 40px;
 }
-.home_image, .home_icon, .home_data{
-	padding: 0px 20px 0px 20px;
+
+.home_image,
+.home_icon,
+.home_data {
+    padding: 0px 20px 0px 20px;
 }
-.home_image img{
-	border-radius: 20px;
-	width: 250px;
+
+.home_image img {
+    border-radius: 20px;
+    width: 250px;
 }
-.skills{
-	display: grid;
-	grid-template-columns: repeat(2, 30%);
-	justify-items: center;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
-	row-gap: 30px;
-	column-gap: 30px;
+
+.skill_page_heading {
+    padding: 90px 0px 60px 0px;
+    text-align: center;
 }
-.skill_heading{
-	grid-column-start: 1;
-	grid-column-end: 3;
-	text-align: center;
+
+.skill_page_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
 }
-.skill_type{
-	display: flex;
-	justify-content: space-between;
+
+.skill_type_header {
+    display: flex;
+    justify-content: space-between;
+    width: 17vw;
 }
-.skill_type img{
-	width: 23px;
+
+.skill_type_header img {
+    width: 30px;
+    height: 30px;
 }
-.skill_data{
-	display: flex;
-	width: 320px;
-	justify-content: space-between;
-	padding-top: 20px;
-	padding-bottom: 10px;
+
+.skill_type_content {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    overflow: hidden;
+    transition: all .5s;
+    width: 16vw;
+    align-items: center;
 }
-.skill_close .skill_content{
-	height: 0;
-	overflow: hidden;
+
+.skill_type_list {
+    width: 15vw;
 }
-.skill_open .skill_conetent{
-	height: max-content;
-	margin-bottom: 20px;
+
+.skill_type_head {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
 }
-.skill_open .drop_arrow{
-	transform: rotate(180deg);
+
+.skill_bar,
+.skill_type_bar {
+    height: 5px;
+    border-radius: 3px;
 }
-.skill_bar, .skill_percentage{
-	height: 5px;
-	border-radius: 2px;
+
+.skill_type_bar {
+    background-color: ivory;
 }
-.skill_bar{
-	width: 320px;
-	background-color: ivory;
+
+.skill_bar {
+    background-color: #0088a9;
+    width: 90%;
 }
-.skill_percentage{
-	background-color: #0088a9;
+
+.c_lang {
+    width: 90%;
 }
-.c_lang{
-	width: 90%;
+
+.java_lang {
+    width: 80%;
 }
-.java_lang{
-	width: 80%;
+
+.python_lang {
+    width: 80%;
 }
-.python_lang{
-	width: 80%;
-}
-.flutter{
-	width: 10%;
+
+.flutter {
+    width: 10%;
 }
