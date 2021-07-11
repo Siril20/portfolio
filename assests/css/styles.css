@@ -92,7 +92,7 @@ section {
 .skill_page_content {
     display: flex;
     justify-content: center;
-    align-items: center;
+
     gap: 10vw;
 }
 
@@ -115,6 +115,11 @@ section {
     transition: all .5s;
     width: 16vw;
     align-items: center;
+}
+
+.closed {
+    height: 0;
+    overflow: hidden;
 }
 
 .skill_type_list {

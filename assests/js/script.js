@@ -1,16 +1,19 @@
-const skill_type = document.querySelectorAll(".skill_type");
-const skill_list = document.querySelectorAll(".skill_list");
+const skill_type_content = document.querySelectorAll(".skill_type_content");
+const skill_type_header = document.querySelectorAll(".skill_type_header");
 
-skill_type.forEach(skill => {
-    skill.addEventListener("click", expandList)
+skill_type_header.forEach(skill => {
+    skill.addEventListener("click", toggleSkillList)
 });
 
-function expandList() {
-    let currrentSkill = this.parentNode;
-    skill_list.forEach(skill_list => {
-        skill_list.className = "skill_list skill_close";
-    });
-    if (currrentSkill.className == "skill_list skill_close") {
-        currrentSkill.className = "skill_list skill_open";
+function toggleSkillList() {
+    let currrentSkill = this.parentNode.childNodes[3];
+    if (currrentSkill.className == "skill_type_content") {
+        currrentSkill.className = "skill_type_content closed";
+    } else {
+        skill_type_content.forEach(skill_content => {
+            skill_content.className = "skill_type_content closed";
+        });
+        currrentSkill.className = "skill_type_content"
     }
+    console.log(currrentSkill);
 }
