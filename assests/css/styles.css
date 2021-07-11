@@ -96,6 +96,10 @@ section {
     gap: 10vw;
 }
 
+.skill_type {
+    padding: 20px;
+}
+
 .skill_type_header {
     display: flex;
     justify-content: space-between;
